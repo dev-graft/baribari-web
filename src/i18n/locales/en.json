@@ -1,0 +1,92 @@
+{
+  "common": {
+    "home": "Home",
+    "tools": "Tools",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "logout": "Logout",
+    "language": "Language",
+    "search": "Search",
+    "save": "Copy",
+    "cancel": "Cancel",
+    "delete": "Clear All",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Swap Input/Output",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "header": {
+    "brand": "Baribari",
+    "navigation": {
+      "home": "Home",
+      "tools": "Tools",
+      "dashboard": "Dashboard"
+    },
+    "auth": {
+      "login": "Login",
+      "dashboard": "Dashboard"
+    }
+  },
+  "tools": {
+    "title": "Development Tools",
+    "description": "Various development tools are provided",
+    "search_placeholder": "Search tools...",
+    "categories": {
+      "all": "All",
+      "converter": "Converters",
+      "formatter": "Formatters",
+      "generator": "Generators",
+      "validator": "Validators"
+    },
+    "base64": {
+      "title": "Base64 Encoder/Decoder",
+      "description": "Encode or decode text to/from Base64",
+      "encode": "Encode",
+      "decode": "Decode",
+      "input_placeholder": "Enter text to encode/decode",
+      "output_placeholder": "Result will be displayed here"
+    },
+    "json": {
+      "title": "JSON Formatter",
+      "description": "Format JSON prettily or minify it",
+      "format": "Format",
+      "minify": "Minify",
+      "input_placeholder": "Enter JSON data",
+      "output_placeholder": "Formatted JSON will be displayed here"
+    },
+    "tools_list": {
+      "unit_converter": {
+        "name": "Unit Converter",
+        "description": "Convert various units such as length, weight, temperature, etc."
+      },
+      "json_formatter": {
+        "name": "JSON Formatter",
+        "description": "Format and minify JSON data beautifully."
+      },
+      "base64_converter": {
+        "name": "Base64 Converter",
+        "description": "Convert text and Base64 encoding mutually."
+      },
+      "timestamp_converter": {
+        "name": "Timestamp Converter",
+        "description": "Convert Unix timestamps and dates mutually."
+      }
+    }
+  },
+  "footer": {
+    "description": "A web utility hub that provides various conversion/tool functions. We provide convenient tools for developers and general users.",
+    "quick_links": "Quick Links",
+    "support": "Support",
+    "help": "Help",
+    "contact": "Contact Us",
+    "feedback": "Feedback",
+    "copyright": "© 2024 Baribari. Made by devgraft team.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us"
+    }
+  }
+}

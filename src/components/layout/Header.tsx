@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, User, LogIn } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../common/LanguageSelector';
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isLoggedIn = false; // TODO: 실제 인증 상태로 교체
 
   const navigation = [
-    { name: '홈', href: '/' },
-    { name: '도구', href: '/tools' },
-    { name: '대시보드', href: '/dashboard' },
+    { name: t('header.navigation.home'), href: '/' },
+    { name: t('header.navigation.tools'), href: '/tools' },
+    { name: t('header.navigation.dashboard'), href: '/dashboard' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -25,7 +28,7 @@ const Header: React.FC = () => {
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">B</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">바리바리</span>
+              <span className="text-xl font-bold text-gray-900">{t('header.brand')}</span>
             </Link>
           </div>
 
@@ -48,13 +51,14 @@ const Header: React.FC = () => {
 
           {/* Auth Section */}
           <div className="flex items-center space-x-4">
+            <LanguageSelector />
             {isLoggedIn ? (
               <Link
                 to="/dashboard"
                 className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors duration-200"
               >
                 <User className="w-5 h-5" />
-                <span className="hidden sm:inline">대시보드</span>
+                <span className="hidden sm:inline">{t('header.auth.dashboard')}</span>
               </Link>
             ) : (
               <Link
@@ -62,7 +66,7 @@ const Header: React.FC = () => {
                 className="btn-primary flex items-center space-x-2"
               >
                 <LogIn className="w-4 h-4" />
-                <span>로그인</span>
+                <span>{t('header.auth.login')}</span>
               </Link>
             )}
 

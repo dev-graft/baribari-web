@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Copy, Check, RotateCcw } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface Base64ConverterProps {
   className?: string;
 }
 
 const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => {
+  const { t } = useTranslation();
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [mode, setMode] = useState<'encode' | 'decode'>('encode');
@@ -76,16 +78,16 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Base64 변환기</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">{t('tools.base64.title')}</h2>
           <p className="text-gray-600">
-            문자열과 Base64 간의 상호 변환을 지원합니다
+            {t('tools.base64.description')}
           </p>
         </div>
         <div className="flex items-center space-x-2">
           <button
             onClick={handleClear}
             className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            title="모두 지우기"
+            title={t('common.delete')}
           >
             <RotateCcw className="w-5 h-5" />
           </button>
@@ -102,7 +104,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
               : 'text-gray-600 hover:text-gray-900'
           }`}
         >
-          문자열 → Base64
+          {t('tools.base64.encode')}
         </button>
         <button
           onClick={() => handleModeChange('decode')}
@@ -112,31 +114,27 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
               : 'text-gray-600 hover:text-gray-900'
           }`}
         >
-          Base64 → 문자열
+          {t('tools.base64.decode')}
         </button>
       </div>
 
       {/* Input Section */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          {mode === 'encode' ? '입력 문자열' : 'Base64 문자열'}
+          {mode === 'encode' ? t('tools.base64.input_placeholder') : 'Base64'}
         </label>
         <div className="relative">
           <textarea
             value={inputText}
             onChange={handleInputChange}
-            placeholder={
-              mode === 'encode'
-                ? '변환할 문자열을 입력하세요...'
-                : '변환할 Base64 문자열을 입력하세요...'
-            }
+            placeholder={t('tools.base64.input_placeholder')}
             className="w-full h-32 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
           />
           {inputText && (
             <button
               onClick={() => handleCopy(inputText)}
               className="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-              title="입력 텍스트 복사"
+              title={t('common.save')}
             >
               {copied ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4" />}
             </button>
@@ -152,7 +150,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
             className="flex items-center space-x-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-lg hover:bg-primary-200 transition-colors"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>입출력 바꾸기</span>
+            <span>{t('common.update')}</span>
           </button>
         </div>
       )}
@@ -160,17 +158,13 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
       {/* Output Section */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          {mode === 'encode' ? 'Base64 결과' : '문자열 결과'}
+          {mode === 'encode' ? 'Base64' : t('tools.base64.output_placeholder')}
         </label>
         <div className="relative">
           <textarea
             value={outputText}
             readOnly
-            placeholder={
-              mode === 'encode'
-                ? 'Base64로 변환된 결과가 여기에 표시됩니다'
-                : '문자열로 변환된 결과가 여기에 표시됩니다'
-            }
+            placeholder={t('tools.base64.output_placeholder')}
             className={`w-full h-32 px-4 py-3 border rounded-lg resize-none ${
               error
                 ? 'border-red-300 bg-red-50 text-red-700'
@@ -181,7 +175,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
             <button
               onClick={() => handleCopy(outputText)}
               className="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-              title="결과 텍스트 복사"
+              title={t('common.save')}
             >
               {copied ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4" />}
             </button>
