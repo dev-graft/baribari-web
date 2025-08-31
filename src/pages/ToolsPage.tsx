@@ -26,7 +26,7 @@ const ToolsPage: React.FC = () => {
       tags: ['단위', '변환', '계산'],
     },
     {
-      id: 'json-formatter',
+      id: 'json-pretty-formatter',
       name: 'JSON 포맷터',
       description: 'JSON 데이터를 보기 좋게 포맷팅하고 압축할 수 있습니다.',
       category: 'formatter',
