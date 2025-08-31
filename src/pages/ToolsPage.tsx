@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Filter, Zap, Code, Calculator, Clock, FileText, Shield } from 'lucide-react';
+import { Search, Zap, Code, Calculator, Clock, FileText, Shield } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ToolsPage: React.FC = () => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: '전체', icon: Zap },
-    { id: 'converter', name: '변환기', icon: Calculator },
-    { id: 'formatter', name: '포맷터', icon: Code },
+    { id: 'all', name: t('tools.categories.all'), icon: Zap },
+    { id: 'converter', name: t('tools.categories.converter'), icon: Calculator },
+    { id: 'formatter', name: t('tools.categories.formatter'), icon: Code },
     { id: 'utility', name: '유틸리티', icon: FileText },
     { id: 'time', name: '시간/날짜', icon: Clock },
     { id: 'security', name: '보안', icon: Shield },
@@ -18,8 +20,8 @@ const ToolsPage: React.FC = () => {
   const tools = [
     {
       id: 'unit-converter',
-      name: '단위 변환',
-      description: '길이, 무게, 온도 등 다양한 단위를 변환할 수 있습니다.',
+      name: t('tools.tools_list.unit_converter.name'),
+      description: t('tools.tools_list.unit_converter.description'),
       category: 'converter',
       icon: Calculator,
       color: 'bg-blue-500',
@@ -27,8 +29,8 @@ const ToolsPage: React.FC = () => {
     },
     {
       id: 'json-pretty-formatter',
-      name: 'JSON 포맷터',
-      description: 'JSON 데이터를 보기 좋게 포맷팅하고 압축할 수 있습니다.',
+      name: t('tools.tools_list.json_formatter.name'),
+      description: t('tools.tools_list.json_formatter.description'),
       category: 'formatter',
       icon: Code,
       color: 'bg-green-500',
@@ -36,8 +38,8 @@ const ToolsPage: React.FC = () => {
     },
     {
       id: 'base64-converter',
-      name: 'Base64 변환',
-      description: '텍스트와 Base64 인코딩을 상호 변환할 수 있습니다.',
+      name: t('tools.tools_list.base64_converter.name'),
+      description: t('tools.tools_list.base64_converter.description'),
       category: 'security',
       icon: Shield,
       color: 'bg-purple-500',
@@ -45,8 +47,8 @@ const ToolsPage: React.FC = () => {
     },
     {
       id: 'timestamp-converter',
-      name: '타임스탬프 변환',
-      description: 'Unix 타임스탬프와 날짜를 상호 변환할 수 있습니다.',
+      name: t('tools.tools_list.timestamp_converter.name'),
+      description: t('tools.tools_list.timestamp_converter.description'),
       category: 'time',
       icon: Clock,
       color: 'bg-orange-500',
@@ -106,10 +108,10 @@ const ToolsPage: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            모든 도구
+            {t('tools.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            개발과 일상에 필요한 다양한 웹 도구들을 찾아보세요
+            {t('tools.description')}
           </p>
         </div>
 
@@ -121,7 +123,7 @@ const ToolsPage: React.FC = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
-                placeholder="도구 이름, 설명, 태그로 검색..."
+                placeholder={t('tools.search_placeholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="input-field pl-10"

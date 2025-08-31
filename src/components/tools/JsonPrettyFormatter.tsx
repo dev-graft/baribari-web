@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Copy, Check, RotateCcw } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface JsonPrettyFormatterProps {
   className?: string;
 }
 
 const JsonPrettyFormatter: React.FC<JsonPrettyFormatterProps> = ({ className = '' }) => {
+  const { t } = useTranslation();
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [copied, setCopied] = useState(false);
