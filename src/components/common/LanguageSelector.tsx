@@ -8,15 +8,15 @@ interface Language {
   flag: string;
 }
 
-const languages: Language[] = [
-  { code: 'ko', name: '한국어', flag: '🇰🇷' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-];
-
 const LanguageSelector: React.FC = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const languages: Language[] = [
+    { code: 'ko', name: t('languages.ko'), flag: '🇰🇷' },
+    { code: 'en', name: t('languages.en'), flag: '🇺🇸' },
+  ];
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
@@ -43,7 +43,7 @@ const LanguageSelector: React.FC = () => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-        aria-label="언어 선택"
+        aria-label={t('common.language_select_label')}
       >
         <Globe className="w-4 h-4" />
         <span className="hidden sm:inline">{currentLanguage.flag}</span>

@@ -1,34 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Shield, BarChart3, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HomePage: React.FC = () => {
+  const { t } = useTranslation();
+
   const featuredTools = [
     {
       id: 'unit-converter',
-      name: '단위 변환',
-      description: '길이, 무게, 온도 등 다양한 단위를 변환할 수 있습니다.',
+      name: t('tools.tools_list.unit_converter.name'),
+      description: t('tools.tools_list.unit_converter.description'),
       icon: Zap,
       color: 'bg-blue-500',
     },
     {
       id: 'json-formatter',
-      name: 'JSON 포맷터',
-      description: 'JSON 데이터를 보기 좋게 포맷팅하고 압축할 수 있습니다.',
+      name: t('tools.tools_list.json_formatter.name'),
+      description: t('tools.tools_list.json_formatter.description'),
       icon: BarChart3,
       color: 'bg-green-500',
     },
     {
       id: 'base64-converter',
-      name: 'Base64 변환',
-      description: '텍스트와 Base64 인코딩을 상호 변환할 수 있습니다.',
+      name: t('tools.tools_list.base64_converter.name'),
+      description: t('tools.tools_list.base64_converter.description'),
       icon: Shield,
       color: 'bg-purple-500',
     },
     {
       id: 'timestamp-converter',
-      name: '타임스탬프 변환',
-      description: 'Unix 타임스탬프와 날짜를 상호 변환할 수 있습니다.',
+      name: t('tools.tools_list.timestamp_converter.name'),
+      description: t('tools.tools_list.timestamp_converter.description'),
       icon: Clock,
       color: 'bg-orange-500',
     },
@@ -36,23 +39,23 @@ const HomePage: React.FC = () => {
 
   const features = [
     {
-      title: '간편한 사용',
-      description: '직관적인 인터페이스로 누구나 쉽게 사용할 수 있습니다.',
+      title: t('home.features.easy_to_use.title'),
+      description: t('home.features.easy_to_use.description'),
       icon: Zap,
     },
     {
-      title: '빠른 처리',
-      description: '클라이언트 사이드에서 즉시 처리되어 빠른 결과를 제공합니다.',
+      title: t('home.features.fast_processing.title'),
+      description: t('home.features.fast_processing.description'),
       icon: Zap,
     },
     {
-      title: '사용 이력',
-      description: '로그인하면 도구 사용 이력을 확인할 수 있습니다.',
+      title: t('home.features.usage_history.title'),
+      description: t('home.features.usage_history.description'),
       icon: BarChart3,
     },
     {
-      title: '지속 업데이트',
-      description: '새로운 도구들이 계속해서 추가됩니다.',
+      title: t('home.features.continuous_updates.title'),
+      description: t('home.features.continuous_updates.description'),
       icon: Zap,
     },
   ];
@@ -63,26 +66,25 @@ const HomePage: React.FC = () => {
       <section className="bg-gradient-to-br from-primary-50 to-blue-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            웹 유틸리티의
-            <span className="text-primary-600 block">모든 것</span>
+            {t('home.hero.title_part1')}
+            <span className="text-primary-600 block">{t('home.hero.title_part2')}</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            개발자와 일반 사용자를 위한 다양한 변환/도구 기능을 제공합니다.
-            단위 변환부터 JSON 포맷터까지, 필요한 모든 도구가 여기에 있습니다.
+            {t('home.hero.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/tools"
               className="btn-primary text-lg px-8 py-3 flex items-center justify-center space-x-2"
             >
-              <span>도구 둘러보기</span>
+              <span>{t('home.hero.browse_tools')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               to="/login"
               className="btn-secondary text-lg px-8 py-3"
             >
-              로그인하여 시작하기
+              {t('home.hero.login_to_start')}
             </Link>
           </div>
         </div>
@@ -93,10 +95,10 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              인기 도구
+              {t('home.featured_tools.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              가장 많이 사용되는 도구들을 먼저 체험해보세요
+              {t('home.featured_tools.description')}
             </p>
           </div>
           
@@ -127,10 +129,10 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              왜 바리바리인가요?
+              {t('home.why_us.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              사용자 경험을 최우선으로 생각하는 서비스입니다
+              {t('home.why_us.description')}
             </p>
           </div>
           
@@ -156,23 +158,23 @@ const HomePage: React.FC = () => {
       <section className="py-20 bg-primary-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            지금 바로 시작하세요
+            {t('home.cta.title')}
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            다양한 도구들을 무료로 사용하고, 로그인하여 사용 이력을 확인해보세요.
+            {t('home.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/tools"
               className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg"
             >
-              모든 도구 보기
+              {t('home.cta.view_all_tools')}
             </Link>
             <Link
               to="/login"
               className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg"
             >
-              로그인
+              {t('common.login')}
             </Link>
           </div>
         </div>

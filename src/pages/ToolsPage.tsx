@@ -12,9 +12,9 @@ const ToolsPage: React.FC = () => {
     { id: 'all', name: t('tools.categories.all'), icon: Zap },
     { id: 'converter', name: t('tools.categories.converter'), icon: Calculator },
     { id: 'formatter', name: t('tools.categories.formatter'), icon: Code },
-    { id: 'utility', name: '유틸리티', icon: FileText },
-    { id: 'time', name: '시간/날짜', icon: Clock },
-    { id: 'security', name: '보안', icon: Shield },
+    { id: 'utility', name: t('tools.categories.utility'), icon: FileText },
+    { id: 'time', name: t('tools.categories.time'), icon: Clock },
+    { id: 'security', name: t('tools.categories.security'), icon: Shield },
   ];
 
   const tools = [
@@ -56,39 +56,39 @@ const ToolsPage: React.FC = () => {
     },
     {
       id: 'url-encoder',
-      name: 'URL 인코더',
-      description: 'URL과 텍스트를 상호 인코딩/디코딩할 수 있습니다.',
+      name: t('tools.tools_list.url_encoder.name'),
+      description: t('tools.tools_list.url_encoder.description'),
       category: 'utility',
       icon: FileText,
       color: 'bg-red-500',
-      tags: ['URL', '인코딩', '웹'],
+      tags: [t('tools.tags.url'), t('tools.tags.encoding'), t('tools.tags.web')],
     },
     {
       id: 'cron-parser',
-      name: 'Cron 파서',
-      description: 'Cron 표현식을 파싱하고 다음 실행 시각을 확인할 수 있습니다.',
+      name: t('tools.tools_list.cron_parser.name'),
+      description: t('tools.tools_list.cron_parser.description'),
       category: 'time',
       icon: Clock,
       color: 'bg-indigo-500',
-      tags: ['Cron', '스케줄', '시간'],
+      tags: [t('tools.tags.cron'), t('tools.tags.schedule'), t('tools.tags.time')],
     },
     {
       id: 'color-converter',
-      name: '색상 변환',
-      description: 'HEX, RGB, HSL 등 다양한 색상 형식을 변환할 수 있습니다.',
+      name: t('tools.tools_list.color_converter.name'),
+      description: t('tools.tools_list.color_converter.description'),
       category: 'converter',
       icon: Calculator,
       color: 'bg-pink-500',
-      tags: ['색상', 'HEX', 'RGB'],
+      tags: [t('tools.tags.color'), t('tools.tags.hex'), t('tools.tags.rgb')],
     },
     {
       id: 'text-case-converter',
-      name: '텍스트 케이스 변환',
-      description: '대문자, 소문자, 카멜케이스 등 텍스트 케이스를 변환할 수 있습니다.',
+      name: t('tools.tools_list.text_case_converter.name'),
+      description: t('tools.tools_list.text_case_converter.description'),
       category: 'formatter',
       icon: Code,
       color: 'bg-teal-500',
-      tags: ['텍스트', '케이스', '포맷팅'],
+      tags: [t('tools.tags.text'), t('tools.tags.case'), t('tools.tags.formatting')],
     },
   ];
 
@@ -187,10 +187,10 @@ const ToolsPage: React.FC = () => {
               <Search className="w-8 h-8 text-gray-400" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 mb-2">
-              검색 결과가 없습니다
+              {t('common.no_results')}
             </h3>
             <p className="text-gray-600">
-              다른 검색어나 카테고리를 시도해보세요.
+              {t('common.try_other_keyword')}
             </p>
           </div>
         )}
@@ -202,19 +202,19 @@ const ToolsPage: React.FC = () => {
               <div className="text-3xl font-bold text-primary-600 mb-2">
                 {tools.length}+
               </div>
-              <div className="text-gray-600">사용 가능한 도구</div>
+              <div className="text-gray-600">{t('tools.stats.available_tools')}</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary-600 mb-2">
                 {categories.length}
               </div>
-              <div className="text-gray-600">도구 카테고리</div>
+              <div className="text-gray-600">{t('tools.stats.tool_categories')}</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary-600 mb-2">
-                무료
+                {t('common.free')}
               </div>
-              <div className="text-gray-600">모든 도구 무료 사용</div>
+              <div className="text-gray-600">{t('tools.stats.all_free')}</div>
             </div>
           </div>
         </div>

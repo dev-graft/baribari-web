@@ -36,7 +36,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
       }
     } catch (err) {
       if (mode === 'decode') {
-        setError('유효하지 않은 Base64 문자열입니다.');
+        setError(t('tools.base64.invalid_string'));
         setOutputText('');
       }
     }
@@ -121,7 +121,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
       {/* Input Section */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          {mode === 'encode' ? t('tools.base64.input_placeholder') : 'Base64'}
+          {mode === 'encode' ? t('common.input_text') : t('tools.base64.title')}
         </label>
         <div className="relative">
           <textarea
@@ -158,7 +158,7 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
       {/* Output Section */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          {mode === 'encode' ? 'Base64' : t('tools.base64.output_placeholder')}
+          {mode === 'encode' ? t('tools.base64.title') : t('common.output_text')}
         </label>
         <div className="relative">
           <textarea
@@ -188,12 +188,12 @@ const Base64Converter: React.FC<Base64ConverterProps> = ({ className = '' }) => 
 
       {/* Info Section */}
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <h3 className="text-sm font-medium text-blue-900 mb-2">사용법</h3>
+        <h3 className="text-sm font-medium text-blue-900 mb-2">{t('common.how_to_use')}</h3>
         <ul className="text-sm text-blue-800 space-y-1">
-          <li>• <strong>인코딩:</strong> 일반 텍스트를 Base64로 변환합니다</li>
-          <li>• <strong>디코딩:</strong> Base64 문자열을 원본 텍스트로 변환합니다</li>
-          <li>• <strong>입출력 바꾸기:</strong> 변환된 결과를 새로운 입력으로 사용할 수 있습니다</li>
-          <li>• <strong>복사:</strong> 각 텍스트 영역의 우상단 버튼으로 내용을 복사할 수 있습니다</li>
+          <li>• <strong>{t('tools.base64.encode')}:</strong> {t('tools.base64.usage.item1')}</li>
+          <li>• <strong>{t('tools.base64.decode')}:</strong> {t('tools.base64.usage.item2')}</li>
+          <li>• <strong>{t('common.update')}:</strong> {t('tools.base64.usage.item3')}</li>
+          <li>• <strong>{t('common.save')}:</strong> {t('tools.base64.usage.item4')}</li>
         </ul>
       </div>
     </div>

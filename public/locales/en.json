@@ -1,0 +1,290 @@
+{
+  "common": {
+    "home": "Home",
+    "tools": "Tools",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "logout": "Logout",
+    "language": "Language",
+    "search": "Search",
+    "save": "Copy",
+    "cancel": "Cancel",
+    "delete": "Clear All",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Swap Input/Output",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "language_select_label": "Select language",
+    "how_to_use": "How to use",
+    "input_text": "Input Text",
+    "output_text": "Output Text",
+    "no_results": "No results found",
+    "try_other_keyword": "Try other keywords or categories.",
+    "free": "Free",
+    "back_to_list": "Back to tool list",
+    "tool_in_development_title": "Tool in Development",
+    "tool_in_development_desc": "This tool is currently under development.",
+    "development_in_progress": "Development in Progress",
+    "tool_coming_soon": "This tool will be available soon.",
+    "want_notification": "If you want to be notified when development is complete",
+    "apply_for_notification": "Apply for notification",
+    "related_tools": "Related Tools",
+    "related_tool": "Related Tool",
+    "related_tool_desc": "This is a useful tool related to this tool.",
+    "back_to_home": "Back to Home",
+    "or": "or",
+    "email": "Email",
+    "password": "Password",
+    "signup": "Sign Up",
+    "loading_login": "Logging in..."
+  },
+  "languages": {
+    "ko": "Korean",
+    "en": "English"
+  },
+  "header": {
+    "brand": "Baribari",
+    "navigation": {
+      "home": "Home",
+      "tools": "Tools",
+      "dashboard": "Dashboard"
+    },
+    "auth": {
+      "login": "Login",
+      "dashboard": "Dashboard"
+    }
+  },
+  "tools": {
+    "title": "Development Tools",
+    "description": "Various development tools are provided",
+    "search_placeholder": "Search tools...",
+    "categories": {
+      "all": "All",
+      "converter": "Converters",
+      "formatter": "Formatters",
+      "generator": "Generators",
+      "validator": "Validators",
+      "utility": "Utility",
+      "time": "Time/Date",
+      "security": "Security"
+    },
+    "base64": {
+      "title": "Base64 Encoder/Decoder",
+      "description": "Encode or decode text to/from Base64",
+      "encode": "Encode",
+      "decode": "Decode",
+      "input_placeholder": "Enter text to encode/decode",
+      "output_placeholder": "Result will be displayed here",
+      "invalid_string": "Invalid Base64 string.",
+      "usage": {
+        "item1": "Convert plain text to Base64.",
+        "item2": "Convert Base64 string to original text.",
+        "item3": "Use the converted result as a new input.",
+        "item4": "Copy the content with the button in the upper right corner of each text area."
+      }
+    },
+    "json_formatter": {
+      "title": "JSON Pretty Formatter",
+      "description": "Format or minify JSON strings to be readable.",
+      "options_label": "Formatting Options",
+      "indent_2": "Indent 2",
+      "indent_4": "Indent 4",
+      "minify": "Minify",
+      "input_label": "Input JSON",
+      "output_label": "Formatted JSON",
+      "input_placeholder": "Enter JSON string to format...",
+      "output_placeholder": "Formatted JSON will be displayed here",
+      "copy_input": "Copy Input JSON",
+      "copy_output": "Copy Formatted JSON",
+      "parse_error_title": "JSON Parsing Error",
+      "parse_error_message": "Invalid JSON format. Please check the JSON syntax.",
+      "copy_error": "Failed to copy to clipboard:",
+      "stats": {
+        "original_length": "Original Length",
+        "formatted_length": "Formatted Length",
+        "original_lines": "Original Lines",
+        "formatted_lines": "Formatted Lines"
+      },
+      "usage": {
+        "item1": "Auto Formatting",
+        "item1_desc": "When you enter JSON, it is automatically formatted to be readable.",
+        "item2": "Adjust Indentation",
+        "item2_desc": "You can choose 2 or 4 space indentation.",
+        "item3": "Minify",
+        "item3_desc": "You can compress the formatted JSON into one line.",
+        "item4_desc": "You can copy the formatted result to the clipboard with the button in the upper right corner.",
+        "item5": "Error Validation",
+        "item5_desc": "An error message is displayed for invalid JSON format."
+      }
+    },
+    "tools_list": {
+      "unit_converter": {
+        "name": "Unit Converter",
+        "description": "Convert various units such as length, weight, temperature, etc."
+      },
+      "json_formatter": {
+        "name": "JSON Formatter",
+        "description": "Format and minify JSON data beautifully."
+      },
+      "base64_converter": {
+        "name": "Base64 Converter",
+        "description": "Convert text and Base64 encoding mutually."
+      },
+      "timestamp_converter": {
+        "name": "Timestamp Converter",
+        "description": "Convert Unix timestamps and dates mutually."
+      },
+      "url_encoder": {
+        "name": "URL Encoder",
+        "description": "Mutually encode/decode URLs and text."
+      },
+      "cron_parser": {
+        "name": "Cron Parser",
+        "description": "Parse Cron expressions and check the next execution time."
+      },
+      "color_converter": {
+        "name": "Color Converter",
+        "description": "Convert various color formats such as HEX, RGB, HSL, etc."
+      },
+      "text_case_converter": {
+        "name": "Text Case Converter",
+        "description": "Convert text cases such as uppercase, lowercase, camelCase, etc."
+      }
+    },
+    "tags": {
+      "url": "URL",
+      "encoding": "Encoding",
+      "web": "Web",
+      "cron": "Cron",
+      "schedule": "Schedule",
+      "time": "Time",
+      "color": "Color",
+      "hex": "HEX",
+      "rgb": "RGB",
+      "text": "Text",
+      "case": "Case",
+      "formatting": "Formatting"
+    },
+    "stats": {
+      "available_tools": "Available Tools",
+      "tool_categories": "Tool Categories",
+      "all_free": "All tools are free to use"
+    }
+  },
+  "footer": {
+    "description": "A web utility hub that provides various conversion/tool functions. We provide convenient tools for developers and general users.",
+    "quick_links": "Quick Links",
+    "support": "Support",
+    "help": "Help",
+    "contact": "Contact Us",
+    "feedback": "Feedback",
+    "copyright": "© 2024 Baribari. Made by devgraft team.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us"
+    }
+  },
+  "home": {
+    "hero": {
+      "title_part1": "Everything about",
+      "title_part2": "Web Utilities",
+      "description": "We provide various conversion/tool functions for developers and general users. From unit conversion to JSON formatters, all the tools you need are here.",
+      "browse_tools": "Browse Tools",
+      "login_to_start": "Login to Get Started"
+    },
+    "featured_tools": {
+      "title": "Popular Tools",
+      "description": "Try the most used tools first"
+    },
+    "why_us": {
+      "title": "Why Baribari?",
+      "description": "We are a service that prioritizes user experience"
+    },
+    "features": {
+      "easy_to_use": {
+        "title": "Easy to Use",
+        "description": "Anyone can use it easily with an intuitive interface."
+      },
+      "fast_processing": {
+        "title": "Fast Processing",
+        "description": "Processed immediately on the client side to provide fast results."
+      },
+      "usage_history": {
+        "title": "Usage History",
+        "description": "You can check the tool usage history by logging in."
+      },
+      "continuous_updates": {
+        "title": "Continuous Updates",
+        "description": "New tools are constantly being added."
+      }
+    },
+    "cta": {
+      "title": "Get Started Now",
+      "description": "Use various tools for free and check your usage history by logging in.",
+      "view_all_tools": "View All Tools"
+    }
+  },
+  "login": {
+    "description": "Log in to your account to check your tool usage history",
+    "google_login": "Login with Google",
+    "no_account": "Don't have an account?",
+    "validation": {
+      "email_required": "Please enter your email.",
+      "email_invalid": "Please enter a valid email format.",
+      "password_required": "Please enter your password.",
+      "password_min_length": "Password must be at least 6 characters.",
+      "login_failed": "Login failed. Please try again.",
+      "google_login_failed": "Google login failed. Please try again."
+    },
+    "benefits": {
+      "title": "Benefits of logging in",
+      "item1": "Tool Usage History",
+      "item2": "Favorites Feature",
+      "item3": "New Tool Notifications"
+    }
+  },
+  "dashboard": {
+    "description": "Check your tool usage and statistics at a glance",
+    "week": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "activity": {
+      "used": "used",
+      "minutes_ago": "{{count}} minutes ago",
+      "hours_ago": "{{count}} hours ago"
+    },
+    "stats": {
+      "total_usage": "Total Usage",
+      "tools_used": "Tools Used",
+      "favorites": "Favorites",
+      "this_week_usage": "This Week's Usage"
+    },
+    "time_range": {
+      "days": "{{count}} days",
+      "year": "{{count}} year"
+    },
+    "usage_over_time": "Usage Over Time",
+    "tool_usage_distribution": "Tool Usage Distribution",
+    "recent_activity": "Recent Activity",
+    "popular_tools": "Popular Tools",
+    "times": "{{count}} times",
+    "quick_actions": {
+      "title": "Quick Actions",
+      "view_history": "View Usage History",
+      "view_history_desc": "Check all your tool usage records in detail",
+      "manage_favorites": "Manage Favorites",
+      "manage_favorites_desc": "Add frequently used tools to your favorites",
+      "export_data": "Export Data",
+      "export_data_desc": "Download your usage statistics as a CSV"
+    }
+  }
+}
