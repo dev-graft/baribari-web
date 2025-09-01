@@ -25,7 +25,7 @@ const ToolsPage: React.FC = () => {
       category: 'converter',
       icon: Calculator,
       color: 'bg-blue-500',
-      tags: ['단위', '변환', '계산'],
+      tags: [t('tools.tags.unit'), t('tools.tags.conversion'), t('tools.tags.calculation')],
     },
     {
       id: 'json-pretty-formatter',
@@ -34,7 +34,7 @@ const ToolsPage: React.FC = () => {
       category: 'formatter',
       icon: Code,
       color: 'bg-green-500',
-      tags: ['JSON', '포맷팅', '코드'],
+      tags: [t('tools.tags.json'), t('tools.tags.formatting'), t('tools.tags.code')],
     },
     {
       id: 'base64-converter',
@@ -43,7 +43,7 @@ const ToolsPage: React.FC = () => {
       category: 'security',
       icon: Shield,
       color: 'bg-purple-500',
-      tags: ['Base64', '인코딩', '보안'],
+      tags: [t('tools.tags.base64'), t('tools.tags.encoding'), t('tools.tags.security')],
     },
     {
       id: 'timestamp-converter',
@@ -52,7 +52,7 @@ const ToolsPage: React.FC = () => {
       category: 'time',
       icon: Clock,
       color: 'bg-orange-500',
-      tags: ['타임스탬프', '날짜', '시간'],
+      tags: [t('tools.tags.timestamp'), t('tools.tags.date'), t('tools.tags.time')],
     },
     {
       id: 'url-encoder',

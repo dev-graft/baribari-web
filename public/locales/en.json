@@ -165,7 +165,16 @@
       "rgb": "RGB",
       "text": "Text",
       "case": "Case",
-      "formatting": "Formatting"
+      "formatting": "Formatting",
+      "unit": "Unit",
+      "conversion": "Conversion",
+      "calculation": "Calculation",
+      "json": "JSON",
+      "code": "Code",
+      "base64": "Base64",
+      "security": "Security",
+      "timestamp": "Timestamp",
+      "date": "Date"
     },
     "stats": {
       "available_tools": "Available Tools",
