@@ -51,7 +51,7 @@ export const DecodeMode: Story = {
     const canvas = canvasElement;
     const decodeButton = canvas.querySelector('button:contains("Base64 → 문자열")');
     if (decodeButton) {
-      decodeButton.click();
+      (decodeButton as HTMLElement).click();
     }
   }
 };
@@ -92,7 +92,7 @@ export const WithError: Story = {
     // 디코딩 모드로 전환
     const decodeButton = canvas.querySelector('button:contains("Base64 → 문자열")');
     if (decodeButton) {
-      decodeButton.click();
+      (decodeButton as HTMLElement).click();
     }
     
     // 유효하지 않은 Base64 문자열 입력
@@ -127,7 +127,7 @@ export const CopyActive: Story = {
     // 복사 버튼 클릭
     const copyButton = canvas.querySelector('button[title="입력 텍스트 복사"]');
     if (copyButton) {
-      copyButton.click();
+      (copyButton as HTMLElement).click();
     }
   }
 };
@@ -209,7 +209,7 @@ export const FullyLoaded: Story = {
     setTimeout(() => {
       const decodeButton = canvas.querySelector('button:contains("Base64 → 문자열")');
       if (decodeButton) {
-        decodeButton.click();
+        (decodeButton as HTMLElement).click();
       }
     }, 1000);
   }

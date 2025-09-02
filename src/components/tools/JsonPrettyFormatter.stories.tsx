@@ -226,7 +226,7 @@ export const WithIndent4: Story = {
       setTimeout(() => {
         const indent4Button = canvas.querySelector('button:contains("들여쓰기 4")');
         if (indent4Button) {
-          indent4Button.click();
+          (indent4Button as HTMLElement).click();
         }
       }, 500);
     }
