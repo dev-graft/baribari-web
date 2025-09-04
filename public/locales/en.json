@@ -151,6 +151,35 @@
         "item5_desc": "An error message is displayed for invalid JSON format."
       }
     },
+    "url_encoder": {
+      "title": "URL Encoder/Decoder",
+      "description": "Encode text to URL-safe format or decode encoded URLs to original text",
+      "encode": "Encode",
+      "decode": "Decode",
+      "encoded_url": "Encoded URL",
+      "encoded_result": "Encoded Result",
+      "input_placeholder": "Enter text to encode",
+      "decode_placeholder": "Enter URL to decode",
+      "output_placeholder": "Result will be displayed here",
+      "valid_url": "Valid URL",
+      "encode_error": "An error occurred while encoding URL",
+      "decode_error": "An error occurred while decoding URL",
+      "general_error": "An error occurred during processing",
+      "stats": {
+        "original_length": "Original Length",
+        "encoded_length": "Encoded Length",
+        "ratio": "Ratio",
+        "difference": "Difference"
+      },
+      "usage": {
+        "item1": "Convert text to URL-safe format",
+        "item2": "Convert encoded URL to original text",
+        "item3": "Use the converted result as a new input",
+        "item4": "Copy content with the button in the upper right corner of each text area",
+        "item5": "URL Preview",
+        "item5_desc": "Provides a preview when the decoded result is a valid URL"
+      }
+    },
     "tools_list": {
       "unit_converter": {
         "name": "Unit Converter",

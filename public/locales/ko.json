@@ -151,6 +151,35 @@
         "item5_desc": "잘못된 JSON 형식일 경우 오류 메시지가 표시됩니다."
       }
     },
+    "url_encoder": {
+      "title": "URL 인코더/디코더",
+      "description": "텍스트를 URL-safe 형태로 인코딩하거나 인코딩된 URL을 원본 텍스트로 디코딩합니다",
+      "encode": "인코딩",
+      "decode": "디코딩",
+      "encoded_url": "인코딩된 URL",
+      "encoded_result": "인코딩된 결과",
+      "input_placeholder": "인코딩할 텍스트를 입력하세요",
+      "decode_placeholder": "디코딩할 URL을 입력하세요",
+      "output_placeholder": "결과가 여기에 표시됩니다",
+      "valid_url": "유효한 URL",
+      "encode_error": "URL 인코딩 중 오류가 발생했습니다",
+      "decode_error": "URL 디코딩 중 오류가 발생했습니다",
+      "general_error": "처리 중 오류가 발생했습니다",
+      "stats": {
+        "original_length": "원본 길이",
+        "encoded_length": "인코딩된 길이",
+        "ratio": "비율",
+        "difference": "차이"
+      },
+      "usage": {
+        "item1": "텍스트를 URL-safe 형태로 변환합니다",
+        "item2": "인코딩된 URL을 원본 텍스트로 변환합니다",
+        "item3": "변환된 결과를 새로운 입력으로 사용할 수 있습니다",
+        "item4": "각 텍스트 영역의 우상단 버튼으로 내용을 복사할 수 있습니다",
+        "item5": "URL 미리보기",
+        "item5_desc": "디코딩된 결과가 유효한 URL인 경우 미리보기를 제공합니다"
+      }
+    },
     "tools_list": {
       "unit_converter": {
         "name": "단위 변환",
