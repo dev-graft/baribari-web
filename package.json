@@ -13,12 +13,14 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/qrcode": "^1.5.5",
     "cron-parser": "^4.8.0",
     "date-fns": "^2.30.0",
     "i18next": "^25.4.2",
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
     "lucide-react": "^0.263.1",
+    "qrcode": "^1.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^15.7.3",

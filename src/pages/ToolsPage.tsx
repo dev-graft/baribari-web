@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Zap, Code, Calculator, Clock, FileText, Shield } from 'lucide-react';
+import { Search, Zap, Code, Calculator, Clock, FileText, Shield, QrCode } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const ToolsPage: React.FC = () => {
@@ -89,6 +89,15 @@ const ToolsPage: React.FC = () => {
       icon: Code,
       color: 'bg-teal-500',
       tags: [t('tools.tags.text'), t('tools.tags.case'), t('tools.tags.formatting')],
+    },
+    {
+      id: 'qr-code-generator',
+      name: t('tools.tools_list.qr_code_generator.name'),
+      description: t('tools.tools_list.qr_code_generator.description'),
+      category: 'generator',
+      icon: QrCode,
+      color: 'bg-gray-600',
+      tags: [t('tools.tags.qrcode'), t('tools.tags.generator'), t('tools.tags.mobile')],
     },
   ];
 
