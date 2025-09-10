@@ -38,7 +38,9 @@
     "email": "이메일",
     "password": "비밀번호",
     "signup": "회원가입",
-    "loading_login": "로그인 중..."
+    "loading_login": "로그인 중...",
+    "copied": "복사됨",
+    "download": "다운로드"
   },
   "languages": {
     "ko": "한국어",
@@ -151,6 +153,58 @@
         "item5_desc": "잘못된 JSON 형식일 경우 오류 메시지가 표시됩니다."
       }
     },
+    "qrcode": {
+      "title": "QR 코드 생성기",
+      "description": "텍스트, URL, 이메일, 전화번호, SMS, WiFi 정보를 QR 코드로 변환합니다",
+      "type": "QR 코드 유형",
+      "type_text": "텍스트",
+      "type_url": "URL",
+      "type_email": "이메일",
+      "type_phone": "전화번호",
+      "type_sms": "SMS",
+      "type_wifi": "WiFi",
+      "text_placeholder": "QR 코드로 변환할 텍스트를 입력하세요",
+      "url_input": "URL",
+      "url_placeholder": "https://example.com",
+      "phone_input": "전화번호",
+      "phone_placeholder": "+82-10-1234-5678",
+      "wifi_ssid": "WiFi 네트워크 이름 (SSID)",
+      "wifi_ssid_placeholder": "네트워크 이름을 입력하세요",
+      "wifi_password": "WiFi 비밀번호",
+      "wifi_password_placeholder": "비밀번호를 입력하세요",
+      "wifi_security": "보안 방식",
+      "wifi_no_password": "비밀번호 없음",
+      "wifi_hidden": "숨김 네트워크",
+      "email_to": "받는 이메일",
+      "email_to_placeholder": "example@email.com",
+      "email_subject": "제목",
+      "email_subject_placeholder": "이메일 제목을 입력하세요",
+      "email_body": "내용",
+      "email_body_placeholder": "이메일 내용을 입력하세요",
+      "sms_number": "전화번호",
+      "sms_number_placeholder": "+82-10-1234-5678",
+      "sms_message": "메시지",
+      "sms_message_placeholder": "SMS 메시지를 입력하세요",
+      "error_correction": "오류 보정 레벨",
+      "error_low": "낮음 (~7%)",
+      "error_medium": "중간 (~15%)",
+      "error_quartile": "높음 (~25%)",
+      "error_high": "최고 (~30%)",
+      "size": "크기",
+      "foreground_color": "전경색",
+      "background_color": "배경색",
+      "preview": "미리보기",
+      "no_preview": "QR 코드를 생성하려면 내용을 입력하세요",
+      "generation_error": "QR 코드 생성 중 오류가 발생했습니다",
+      "customize": "사용자 정의",
+      "save_download": "저장/다운로드",
+      "usage": {
+        "item1": "원하는 QR 코드 유형을 선택하세요",
+        "item2": "해당하는 정보를 입력하세요",
+        "item3": "크기, 색상, 오류 보정 레벨을 조정할 수 있습니다",
+        "item4": "생성된 QR 코드를 복사하거나 다운로드할 수 있습니다"
+      }
+    },
     "url_encoder": {
       "title": "URL 인코더/디코더",
       "description": "텍스트를 URL-safe 형태로 인코딩하거나 인코딩된 URL을 원본 텍스트로 디코딩합니다",
@@ -212,6 +266,45 @@
       "text_case_converter": {
         "name": "텍스트 케이스 변환",
         "description": "대문자, 소문자, 카멜케이스 등 텍스트 케이스를 변환할 수 있습니다."
+      },
+      "qr_code_generator": {
+        "name": "QR 코드 생성기",
+        "description": "텍스트, URL, 이메일, WiFi 정보 등을 QR 코드로 변환할 수 있습니다."
+      },
+      "string_diff": {
+        "name": "문자열 Diff",
+        "description": "두 텍스트 간의 차이점을 시각적으로 비교하고 하이라이트합니다."
+      }
+    },
+    "string_diff": {
+      "title": "문자열 Diff (텍스트 비교)",
+      "description": "두 텍스트 간의 차이점을 시각적으로 비교하고 하이라이트합니다. 문자, 단어, 줄 단위로 비교 가능합니다",
+      "text_a": "텍스트 A (원본)",
+      "text_b": "텍스트 B (비교)",
+      "text_a_placeholder": "비교할 첫 번째 텍스트를 입력하세요",
+      "text_b_placeholder": "비교할 두 번째 텍스트를 입력하세요",
+      "diff_mode": "비교 모드",
+      "character": "문자",
+      "word": "단어",
+      "line": "줄",
+      "ignore_whitespace": "공백 무시",
+      "ignore_case": "대소문자 무시",
+      "swap": "텍스트 위치 바꾸기",
+      "result": "비교 결과",
+      "no_diff": "텍스트를 입력하면 차이점이 표시됩니다",
+      "equal": "동일",
+      "added": "추가",
+      "removed": "삭제",
+      "total": "전체",
+      "input": "입력",
+      "options": "옵션",
+      "colors": "색상 표시",
+      "usage": {
+        "item1": "양쪽 텍스트 영역에 비교할 텍스트를 입력하세요",
+        "item2": "문자, 단어, 줄 단위 중에서 비교 방식을 선택하세요",
+        "item3": "공백 무시, 대소문자 무시 등의 옵션을 활용하세요",
+        "item4": "초록색은 추가된 부분, 빨간색은 삭제된 부분을 의미합니다",
+        "item5": "화살표 버튼으로 두 텍스트의 위치를 바꿀 수 있습니다"
       }
     },
     "tags": {
@@ -235,7 +328,11 @@
       "base64": "Base64",
       "security": "보안",
       "timestamp": "타임스탬프",
-      "date": "날짜"
+      "date": "날짜",
+      "qrcode": "QR코드",
+      "generator": "생성기",
+      "mobile": "모바일",
+      "comparison": "비교"
     },
     "stats": {
       "available_tools": "사용 가능한 도구",

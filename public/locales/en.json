@@ -38,7 +38,9 @@
     "email": "Email",
     "password": "Password",
     "signup": "Sign Up",
-    "loading_login": "Logging in..."
+    "loading_login": "Logging in...",
+    "copied": "Copied",
+    "download": "Download"
   },
   "languages": {
     "ko": "Korean",
@@ -151,6 +153,58 @@
         "item5_desc": "An error message is displayed for invalid JSON format."
       }
     },
+    "qrcode": {
+      "title": "QR Code Generator",
+      "description": "Convert text, URLs, email, phone numbers, SMS, and WiFi information into QR codes",
+      "type": "QR Code Type",
+      "type_text": "Text",
+      "type_url": "URL",
+      "type_email": "Email",
+      "type_phone": "Phone",
+      "type_sms": "SMS",
+      "type_wifi": "WiFi",
+      "text_placeholder": "Enter text to convert to QR code",
+      "url_input": "URL",
+      "url_placeholder": "https://example.com",
+      "phone_input": "Phone Number",
+      "phone_placeholder": "+1-555-123-4567",
+      "wifi_ssid": "WiFi Network Name (SSID)",
+      "wifi_ssid_placeholder": "Enter network name",
+      "wifi_password": "WiFi Password",
+      "wifi_password_placeholder": "Enter password",
+      "wifi_security": "Security Type",
+      "wifi_no_password": "No Password",
+      "wifi_hidden": "Hidden Network",
+      "email_to": "Email Address",
+      "email_to_placeholder": "example@email.com",
+      "email_subject": "Subject",
+      "email_subject_placeholder": "Enter email subject",
+      "email_body": "Body",
+      "email_body_placeholder": "Enter email body",
+      "sms_number": "Phone Number",
+      "sms_number_placeholder": "+1-555-123-4567",
+      "sms_message": "Message",
+      "sms_message_placeholder": "Enter SMS message",
+      "error_correction": "Error Correction Level",
+      "error_low": "Low (~7%)",
+      "error_medium": "Medium (~15%)",
+      "error_quartile": "Quartile (~25%)",
+      "error_high": "High (~30%)",
+      "size": "Size",
+      "foreground_color": "Foreground Color",
+      "background_color": "Background Color",
+      "preview": "Preview",
+      "no_preview": "Enter content to generate QR code",
+      "generation_error": "Error occurred while generating QR code",
+      "customize": "Customize",
+      "save_download": "Save/Download",
+      "usage": {
+        "item1": "Select the desired QR code type",
+        "item2": "Enter the corresponding information",
+        "item3": "Adjust size, colors, and error correction level",
+        "item4": "Copy or download the generated QR code"
+      }
+    },
     "url_encoder": {
       "title": "URL Encoder/Decoder",
       "description": "Encode text to URL-safe format or decode encoded URLs to original text",
@@ -212,6 +266,45 @@
       "text_case_converter": {
         "name": "Text Case Converter",
         "description": "Convert text cases such as uppercase, lowercase, camelCase, etc."
+      },
+      "qr_code_generator": {
+        "name": "QR Code Generator",
+        "description": "Convert text, URLs, email, WiFi information, etc. into QR codes."
+      },
+      "string_diff": {
+        "name": "String Diff",
+        "description": "Visually compare and highlight differences between two texts."
+      }
+    },
+    "string_diff": {
+      "title": "String Diff (Text Comparison)",
+      "description": "Visually compare and highlight differences between two texts. Support character, word, and line-level comparison",
+      "text_a": "Text A (Original)",
+      "text_b": "Text B (Comparison)",
+      "text_a_placeholder": "Enter the first text to compare",
+      "text_b_placeholder": "Enter the second text to compare",
+      "diff_mode": "Comparison Mode",
+      "character": "Character",
+      "word": "Word",
+      "line": "Line",
+      "ignore_whitespace": "Ignore Whitespace",
+      "ignore_case": "Ignore Case",
+      "swap": "Swap Text Position",
+      "result": "Comparison Result",
+      "no_diff": "Enter text to see the differences",
+      "equal": "Equal",
+      "added": "Added",
+      "removed": "Removed",
+      "total": "Total",
+      "input": "Input",
+      "options": "Options",
+      "colors": "Color Display",
+      "usage": {
+        "item1": "Enter texts to compare in both text areas",
+        "item2": "Choose comparison method from character, word, or line level",
+        "item3": "Use options like ignore whitespace and ignore case",
+        "item4": "Green indicates added parts, red indicates removed parts",
+        "item5": "Use the arrow button to swap the position of the two texts"
       }
     },
     "tags": {
@@ -235,7 +328,11 @@
       "base64": "Base64",
       "security": "Security",
       "timestamp": "Timestamp",
-      "date": "Date"
+      "date": "Date",
+      "qrcode": "QR Code",
+      "generator": "Generator",
+      "mobile": "Mobile",
+      "comparison": "Comparison"
     },
     "stats": {
       "available_tools": "Available Tools",

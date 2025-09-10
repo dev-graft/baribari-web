@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import Base64Converter from '../components/tools/Base64Converter';
 import JsonPrettyFormatter from '../components/tools/JsonPrettyFormatter';
 import UrlEncoder from '../components/tools/UrlEncoder';
+import QRCodeGenerator from '../components/tools/QRCodeGenerator';
+import StringDiff from '../components/tools/StringDiff';
 
 const ToolDetailPage: React.FC = () => {
   const { toolId } = useParams();
@@ -13,6 +15,8 @@ const ToolDetailPage: React.FC = () => {
   const isBase64Converter = toolId === 'base64-converter';
   const isJsonPrettyFormatter = toolId === 'json-pretty-formatter';
   const isUrlEncoder = toolId === 'url-encoder';
+  const isQRCodeGenerator = toolId === 'qr-code-generator';
+  const isStringDiff = toolId === 'string-diff';
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -35,6 +39,10 @@ const ToolDetailPage: React.FC = () => {
           <JsonPrettyFormatter />
         ) : isUrlEncoder ? (
           <UrlEncoder />
+        ) : isQRCodeGenerator ? (
+          <QRCodeGenerator />
+        ) : isStringDiff ? (
+          <StringDiff />
         ) : (
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="text-center">
