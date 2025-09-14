@@ -270,6 +270,41 @@
       "qr_code_generator": {
         "name": "QR Code Generator",
         "description": "Convert text, URLs, email, WiFi information, etc. into QR codes."
+      },
+      "string_diff": {
+        "name": "String Diff",
+        "description": "Visually compare and highlight differences between two texts."
+      }
+    },
+    "string_diff": {
+      "title": "String Diff (Text Comparison)",
+      "description": "Visually compare and highlight differences between two texts. Support character, word, and line-level comparison",
+      "text_a": "Text A (Original)",
+      "text_b": "Text B (Comparison)",
+      "text_a_placeholder": "Enter the first text to compare",
+      "text_b_placeholder": "Enter the second text to compare",
+      "diff_mode": "Comparison Mode",
+      "character": "Character",
+      "word": "Word",
+      "line": "Line",
+      "ignore_whitespace": "Ignore Whitespace",
+      "ignore_case": "Ignore Case",
+      "swap": "Swap Text Position",
+      "result": "Comparison Result",
+      "no_diff": "Enter text to see the differences",
+      "equal": "Equal",
+      "added": "Added",
+      "removed": "Removed",
+      "total": "Total",
+      "input": "Input",
+      "options": "Options",
+      "colors": "Color Display",
+      "usage": {
+        "item1": "Enter texts to compare in both text areas",
+        "item2": "Choose comparison method from character, word, or line level",
+        "item3": "Use options like ignore whitespace and ignore case",
+        "item4": "Green indicates added parts, red indicates removed parts",
+        "item5": "Use the arrow button to swap the position of the two texts"
       }
     },
     "tags": {
@@ -296,7 +331,8 @@
       "date": "Date",
       "qrcode": "QR Code",
       "generator": "Generator",
-      "mobile": "Mobile"
+      "mobile": "Mobile",
+      "comparison": "Comparison"
     },
     "stats": {
       "available_tools": "Available Tools",

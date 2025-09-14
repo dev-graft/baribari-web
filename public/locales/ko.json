@@ -270,6 +270,41 @@
       "qr_code_generator": {
         "name": "QR 코드 생성기",
         "description": "텍스트, URL, 이메일, WiFi 정보 등을 QR 코드로 변환할 수 있습니다."
+      },
+      "string_diff": {
+        "name": "문자열 Diff",
+        "description": "두 텍스트 간의 차이점을 시각적으로 비교하고 하이라이트합니다."
+      }
+    },
+    "string_diff": {
+      "title": "문자열 Diff (텍스트 비교)",
+      "description": "두 텍스트 간의 차이점을 시각적으로 비교하고 하이라이트합니다. 문자, 단어, 줄 단위로 비교 가능합니다",
+      "text_a": "텍스트 A (원본)",
+      "text_b": "텍스트 B (비교)",
+      "text_a_placeholder": "비교할 첫 번째 텍스트를 입력하세요",
+      "text_b_placeholder": "비교할 두 번째 텍스트를 입력하세요",
+      "diff_mode": "비교 모드",
+      "character": "문자",
+      "word": "단어",
+      "line": "줄",
+      "ignore_whitespace": "공백 무시",
+      "ignore_case": "대소문자 무시",
+      "swap": "텍스트 위치 바꾸기",
+      "result": "비교 결과",
+      "no_diff": "텍스트를 입력하면 차이점이 표시됩니다",
+      "equal": "동일",
+      "added": "추가",
+      "removed": "삭제",
+      "total": "전체",
+      "input": "입력",
+      "options": "옵션",
+      "colors": "색상 표시",
+      "usage": {
+        "item1": "양쪽 텍스트 영역에 비교할 텍스트를 입력하세요",
+        "item2": "문자, 단어, 줄 단위 중에서 비교 방식을 선택하세요",
+        "item3": "공백 무시, 대소문자 무시 등의 옵션을 활용하세요",
+        "item4": "초록색은 추가된 부분, 빨간색은 삭제된 부분을 의미합니다",
+        "item5": "화살표 버튼으로 두 텍스트의 위치를 바꿀 수 있습니다"
       }
     },
     "tags": {
@@ -296,7 +331,8 @@
       "date": "날짜",
       "qrcode": "QR코드",
       "generator": "생성기",
-      "mobile": "모바일"
+      "mobile": "모바일",
+      "comparison": "비교"
     },
     "stats": {
       "available_tools": "사용 가능한 도구",
