@@ -19,15 +19,6 @@ const ToolsPage: React.FC = () => {
 
   const tools = [
     {
-      id: 'unit-converter',
-      name: t('tools.tools_list.unit_converter.name'),
-      description: t('tools.tools_list.unit_converter.description'),
-      category: 'converter',
-      icon: Calculator,
-      color: 'bg-blue-500',
-      tags: [t('tools.tags.unit'), t('tools.tags.conversion'), t('tools.tags.calculation')],
-    },
-    {
       id: 'json-pretty-formatter',
       name: t('tools.tools_list.json_formatter.name'),
       description: t('tools.tools_list.json_formatter.description'),
@@ -46,15 +37,6 @@ const ToolsPage: React.FC = () => {
       tags: [t('tools.tags.base64'), t('tools.tags.encoding'), t('tools.tags.security')],
     },
     {
-      id: 'timestamp-converter',
-      name: t('tools.tools_list.timestamp_converter.name'),
-      description: t('tools.tools_list.timestamp_converter.description'),
-      category: 'time',
-      icon: Clock,
-      color: 'bg-orange-500',
-      tags: [t('tools.tags.timestamp'), t('tools.tags.date'), t('tools.tags.time')],
-    },
-    {
       id: 'url-encoder',
       name: t('tools.tools_list.url_encoder.name'),
       description: t('tools.tools_list.url_encoder.description'),
@@ -62,33 +44,6 @@ const ToolsPage: React.FC = () => {
       icon: FileText,
       color: 'bg-red-500',
       tags: [t('tools.tags.url'), t('tools.tags.encoding'), t('tools.tags.web')],
-    },
-    {
-      id: 'cron-parser',
-      name: t('tools.tools_list.cron_parser.name'),
-      description: t('tools.tools_list.cron_parser.description'),
-      category: 'time',
-      icon: Clock,
-      color: 'bg-indigo-500',
-      tags: [t('tools.tags.cron'), t('tools.tags.schedule'), t('tools.tags.time')],
-    },
-    {
-      id: 'color-converter',
-      name: t('tools.tools_list.color_converter.name'),
-      description: t('tools.tools_list.color_converter.description'),
-      category: 'converter',
-      icon: Calculator,
-      color: 'bg-pink-500',
-      tags: [t('tools.tags.color'), t('tools.tags.hex'), t('tools.tags.rgb')],
-    },
-    {
-      id: 'text-case-converter',
-      name: t('tools.tools_list.text_case_converter.name'),
-      description: t('tools.tools_list.text_case_converter.description'),
-      category: 'formatter',
-      icon: Code,
-      color: 'bg-teal-500',
-      tags: [t('tools.tags.text'), t('tools.tags.case'), t('tools.tags.formatting')],
     },
     {
       id: 'qr-code-generator',
@@ -107,6 +62,15 @@ const ToolsPage: React.FC = () => {
       icon: GitCompare,
       color: 'bg-yellow-500',
       tags: [t('tools.tags.text'), t('tools.tags.comparison'), t('tools.tags.formatting')],
+    },
+    {
+      id: 'unit-converter',
+      name: t('tools.tools_list.unit_converter.name'),
+      description: t('tools.tools_list.unit_converter.description'),
+      category: 'converter',
+      icon: Calculator,
+      color: 'bg-blue-500',
+      tags: [t('tools.tags.unit'), t('tools.tags.conversion'), t('tools.tags.calculation')],
     },
   ];
 
