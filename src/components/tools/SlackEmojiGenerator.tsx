@@ -72,8 +72,7 @@ const SlackEmojiGenerator: React.FC<SlackEmojiGeneratorProps> = ({ className = '
     context.fillStyle = textColor;
     context.textBaseline = 'middle';
 
-    // Enable text anti-aliasing for better quality
-    context.textRenderingOptimization = 'optimizeQuality';
+    // Enable text anti-aliasing for better quality (browser will handle this automatically)
 
     // Split text by lines
     const lines = text.split('\n');
@@ -145,14 +144,6 @@ const SlackEmojiGenerator: React.FC<SlackEmojiGeneratorProps> = ({ className = '
     setEmojiSize('128');
   };
 
-  const getAlignIcon = () => {
-    switch (textAlign) {
-      case 'left': return AlignLeft;
-      case 'right': return AlignRight;
-      case 'center':
-      default: return AlignCenter;
-    }
-  };
 
   return (
     <div className={`bg-white rounded-lg shadow-lg p-6 ${className}`}>
