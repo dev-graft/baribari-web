@@ -178,19 +178,6 @@ const AsciiArtGenerator: React.FC<AsciiArtGeneratorProps> = ({ className = '' })
     }
   }, [width, characterSet, threshold, customCharacters]);
 
-  // Re-generate ASCII art when settings change (fallback)
-  const handleSettingsChange = () => {
-    if (selectedFile) {
-      setLoading(true);
-      const currentChar = getCharacterSet(characterSet);
-      processImage(selectedFile, currentChar)
-        .catch(err => {
-          setError(t('tools.ascii_art.processing_error'));
-          console.error('ASCII art regeneration error:', err);
-        })
-        .finally(() => setLoading(false));
-    }
-  };
 
   // Drag and drop handlers
   const handleDragEnter = (e: React.DragEvent) => {
