@@ -274,6 +274,10 @@
       "string_diff": {
         "name": "String Diff",
         "description": "Visually compare and highlight differences between two texts."
+      },
+      "slack_emoji_generator": {
+        "name": "Slack Emoji Generator",
+        "description": "Generate Slack emojis from text with customizable fonts, colors, and alignment."
       }
     },
     "string_diff": {
@@ -307,6 +311,40 @@
         "item5": "Use the arrow button to swap the position of the two texts"
       }
     },
+    "slack_emoji": {
+      "title": "Slack Emoji Generator",
+      "description": "Generate Slack emojis from text. Set font, colors, alignment and download as image",
+      "text_input": "Text Input",
+      "text_placeholder": "Enter text to create emoji",
+      "emoji_name": "Emoji Name",
+      "emoji_name_placeholder": "my_emoji",
+      "emoji_size": "Emoji Size",
+      "recommended": "Recommended",
+      "font_family": "Font Family",
+      "font_size": "Font Size",
+      "text_color": "Text Color",
+      "background_color": "Background Color",
+      "text_align": "Text Alignment",
+      "preview": "Preview",
+      "download_emoji": "Download Emoji",
+      "copy_instructions": "Copy Slack Upload Guide",
+      "how_to_use_slack": "How to use emojis in Slack",
+      "instruction_1": "Go to Workspace Settings > Emoji Management menu",
+      "instruction_2": "Click Add New Emoji button",
+      "instruction_3": "Upload the generated image file",
+      "instruction_4": "Enter emoji name (e.g., {{name}})",
+      "instruction_5": "Use emoji as :{{name}}:",
+      "tips": "Tips",
+      "tip_1": "128x128px size looks best in Slack",
+      "tip_2": "Use good contrast color combinations for better readability",
+      "tip_3": "Emoji names can only contain letters, numbers, and underscores",
+      "usage": {
+        "item1": "Enter text and set your desired style settings",
+        "item2": "Preview updates in real-time as you make changes",
+        "item3": "Download the generated image and upload to Slack",
+        "item4": "Use the copy button to check the Slack upload guide"
+      }
+    },
     "tags": {
       "url": "URL",
       "encoding": "Encoding",
@@ -332,7 +370,10 @@
       "qrcode": "QR Code",
       "generator": "Generator",
       "mobile": "Mobile",
-      "comparison": "Comparison"
+      "comparison": "Comparison",
+      "slack": "Slack",
+      "emoji": "Emoji",
+      "image": "Image"
     },
     "stats": {
       "available_tools": "Available Tools",

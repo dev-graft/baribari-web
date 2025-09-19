@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Zap, Code, Calculator, Clock, FileText, Shield, QrCode, GitCompare } from 'lucide-react';
+import { Search, Zap, Code, Calculator, Clock, FileText, Shield, QrCode, GitCompare, Smile } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const ToolsPage: React.FC = () => {
@@ -12,6 +12,7 @@ const ToolsPage: React.FC = () => {
     { id: 'all', name: t('tools.categories.all'), icon: Zap },
     { id: 'converter', name: t('tools.categories.converter'), icon: Calculator },
     { id: 'formatter', name: t('tools.categories.formatter'), icon: Code },
+    { id: 'generator', name: t('tools.categories.generator'), icon: Zap },
     { id: 'utility', name: t('tools.categories.utility'), icon: FileText },
     { id: 'time', name: t('tools.categories.time'), icon: Clock },
     { id: 'security', name: t('tools.categories.security'), icon: Shield },
@@ -62,6 +63,15 @@ const ToolsPage: React.FC = () => {
       icon: GitCompare,
       color: 'bg-yellow-500',
       tags: [t('tools.tags.text'), t('tools.tags.comparison'), t('tools.tags.formatting')],
+    },
+    {
+      id: 'slack-emoji-generator',
+      name: t('tools.tools_list.slack_emoji_generator.name'),
+      description: t('tools.tools_list.slack_emoji_generator.description'),
+      category: 'generator',
+      icon: Smile,
+      color: 'bg-indigo-500',
+      tags: [t('tools.tags.slack'), t('tools.tags.emoji'), t('tools.tags.image'), t('tools.tags.generator')],
     },
     {
       id: 'unit-converter',
