@@ -274,6 +274,10 @@
       "string_diff": {
         "name": "문자열 Diff",
         "description": "두 텍스트 간의 차이점을 시각적으로 비교하고 하이라이트합니다."
+      },
+      "slack_emoji_generator": {
+        "name": "Slack 이모지 생성기",
+        "description": "텍스트로 Slack 이모지를 생성합니다. 폰트, 색상, 정렬을 설정할 수 있습니다."
       }
     },
     "string_diff": {
@@ -307,6 +311,40 @@
         "item5": "화살표 버튼으로 두 텍스트의 위치를 바꿀 수 있습니다"
       }
     },
+    "slack_emoji": {
+      "title": "Slack 이모지 생성기",
+      "description": "텍스트로 Slack 이모지를 생성합니다. 폰트, 색상, 정렬을 설정하고 이미지로 다운로드하세요",
+      "text_input": "텍스트 입력",
+      "text_placeholder": "이모지로 만들 텍스트를 입력하세요",
+      "emoji_name": "이모지 이름",
+      "emoji_name_placeholder": "my_emoji",
+      "emoji_size": "이모지 크기",
+      "recommended": "권장",
+      "font_family": "폰트",
+      "font_size": "폰트 크기",
+      "text_color": "텍스트 색상",
+      "background_color": "배경 색상",
+      "text_align": "텍스트 정렬",
+      "preview": "미리보기",
+      "download_emoji": "이모지 다운로드",
+      "copy_instructions": "Slack 업로드 가이드 복사",
+      "how_to_use_slack": "Slack에서 이모지 사용하는 방법",
+      "instruction_1": "워크스페이스 설정 > 이모지 관리 메뉴로 이동",
+      "instruction_2": "새 이모지 추가 버튼 클릭",
+      "instruction_3": "생성된 이미지 파일 업로드",
+      "instruction_4": "이모지 이름 입력 (예: {{name}})",
+      "instruction_5": ":{{name}}: 형태로 이모지 사용",
+      "tips": "팁",
+      "tip_1": "128x128px 크기가 Slack에서 가장 잘 보입니다",
+      "tip_2": "대비가 좋은 색상 조합을 사용하면 가독성이 높아집니다",
+      "tip_3": "이모지 이름은 영문자와 숫자, 언더스코어만 사용 가능합니다",
+      "usage": {
+        "item1": "텍스트를 입력하고 원하는 스타일을 설정하세요",
+        "item2": "실시간으로 미리보기를 확인할 수 있습니다",
+        "item3": "생성된 이미지를 다운로드하여 Slack에 업로드하세요",
+        "item4": "복사 버튼으로 Slack 업로드 가이드를 확인하세요"
+      }
+    },
     "tags": {
       "url": "URL",
       "encoding": "인코딩",
@@ -332,7 +370,10 @@
       "qrcode": "QR코드",
       "generator": "생성기",
       "mobile": "모바일",
-      "comparison": "비교"
+      "comparison": "비교",
+      "slack": "Slack",
+      "emoji": "이모지",
+      "image": "이미지"
     },
     "stats": {
       "available_tools": "사용 가능한 도구",

@@ -7,6 +7,7 @@ import JsonPrettyFormatter from '../components/tools/JsonPrettyFormatter';
 import UrlEncoder from '../components/tools/UrlEncoder';
 import QRCodeGenerator from '../components/tools/QRCodeGenerator';
 import StringDiff from '../components/tools/StringDiff';
+import SlackEmojiGenerator from '../components/tools/SlackEmojiGenerator';
 
 const ToolDetailPage: React.FC = () => {
   const { toolId } = useParams();
@@ -17,6 +18,7 @@ const ToolDetailPage: React.FC = () => {
   const isUrlEncoder = toolId === 'url-encoder';
   const isQRCodeGenerator = toolId === 'qr-code-generator';
   const isStringDiff = toolId === 'string-diff';
+  const isSlackEmojiGenerator = toolId === 'slack-emoji-generator';
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -43,6 +45,8 @@ const ToolDetailPage: React.FC = () => {
           <QRCodeGenerator />
         ) : isStringDiff ? (
           <StringDiff />
+        ) : isSlackEmojiGenerator ? (
+          <SlackEmojiGenerator />
         ) : (
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="text-center">
