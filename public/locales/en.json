@@ -40,7 +40,11 @@
     "signup": "Sign Up",
     "loading_login": "Logging in...",
     "copied": "Copied",
-    "download": "Download"
+    "download": "Download",
+    "copy": "Copy",
+    "reset": "Reset",
+    "select_file": "Select File",
+    "processing": "Processing..."
   },
   "languages": {
     "ko": "Korean",
@@ -278,6 +282,10 @@
       "slack_emoji_generator": {
         "name": "Slack Emoji Generator",
         "description": "Generate Slack emojis from text with customizable fonts, colors, and alignment."
+      },
+      "ascii_art_generator": {
+        "name": "ASCII Art Generator",
+        "description": "Convert images to ASCII art with various character sets and customizable settings."
       }
     },
     "string_diff": {
@@ -345,6 +353,43 @@
         "item4": "Use the copy button to check the Slack upload guide"
       }
     },
+    "ascii_art": {
+      "title": "ASCII Art Generator",
+      "description": "Convert images to ASCII art with various character sets and settings to create the text art style you want",
+      "image_upload": "Image Upload",
+      "drag_drop_image": "Drag and drop image here",
+      "supported_formats": "Supported formats: JPG, PNG, GIF, WebP (max 10MB)",
+      "choose_image": "Choose Image",
+      "original_image": "Original Image",
+      "settings": "Settings",
+      "width": "Width",
+      "characters": "characters",
+      "character_set": "Character Set",
+      "character_sets": {
+        "ascii": "ASCII Characters (@%#*+=-:. )",
+        "extended": "Extended Characters (█▉▊▋▌▍▎▏ )",
+        "simple": "Simple Characters (█▓▒░ )",
+        "blocks": "Block Characters (██▓▒░  )",
+        "custom": "Custom"
+      },
+      "custom_characters": "Custom Characters",
+      "custom_characters_hint": "Enter characters from bright to dark order",
+      "contrast": "Contrast",
+      "result": "ASCII Art Result",
+      "no_result": "Upload an image to see ASCII art here",
+      "character_preview": "Character Preview",
+      "character_preview_desc": "Selected character set (bright → dark order)",
+      "invalid_file_type": "Only image files can be uploaded.",
+      "file_too_large": "File size must be 10MB or less.",
+      "processing_error": "An error occurred while processing the image.",
+      "usage": {
+        "item1": "Upload an image and it will be automatically converted to ASCII art",
+        "item2": "Adjust width to set output size (20-200 characters)",
+        "item3": "Choose different character sets to create your desired style",
+        "item4": "Adjust contrast to enhance or soften the brightness effects",
+        "item5": "Copy the result or download it as a text file"
+      }
+    },
     "tags": {
       "url": "URL",
       "encoding": "Encoding",
@@ -373,7 +418,76 @@
       "comparison": "Comparison",
       "slack": "Slack",
       "emoji": "Emoji",
-      "image": "Image"
+      "image": "Image",
+      "ascii": "ASCII",
+      "art": "Art",
+      "text": "Text"
+    },
+    "ascii_art": {
+      "title": "ASCII Art Generator",
+      "description": "Convert images to ASCII characters to create text art",
+      "upload_section": "Image Upload",
+      "drag_and_drop": "Drag an image here to upload",
+      "or_click_to_browse": "or click to select a file",
+      "settings": "Settings",
+      "width": "Width",
+      "threshold": "Threshold",
+      "character_set": "Character Set",
+      "custom_character": "Custom Character",
+      "char_sets": {
+        "ascii": "ASCII",
+        "extended": "Extended",
+        "simple": "Simple",
+        "blocks": "Blocks",
+        "custom": "Custom"
+      },
+      "image_preview": "Image Preview",
+      "original_image": "Original Image",
+      "grayscale_preview": "Grayscale Preview",
+      "result": "Result",
+      "no_result": "No result available",
+      "processing": "Processing...",
+      "invalid_file_type": "Invalid file type",
+      "file_too_large": "File size too large (max 10MB)",
+      "processing_error": "An error occurred during processing"
+    },
+    "tools_list": {
+      "json_formatter": {
+        "name": "JSON Formatter",
+        "description": "Format and minify JSON strings for readability"
+      },
+      "base64_converter": {
+        "name": "Base64 Converter",
+        "description": "Encode and decode text and files to/from Base64"
+      },
+      "url_encoder": {
+        "name": "URL Encoder/Decoder",
+        "description": "URL encoding and decoding"
+      },
+      "qr_code_generator": {
+        "name": "QR Code Generator",
+        "description": "Convert text to QR code"
+      },
+      "string_diff": {
+        "name": "String Diff",
+        "description": "Compare and highlight differences between two texts"
+      },
+      "slack_emoji_generator": {
+        "name": "Slack Emoji Generator",
+        "description": "Generate Slack emoji images from text"
+      },
+      "ascii_art_generator": {
+        "name": "ASCII Art Generator",
+        "description": "Convert images to ASCII characters"
+      },
+      "unit_converter": {
+        "name": "Unit Converter",
+        "description": "Convert between various units"
+      },
+      "timestamp_converter": {
+        "name": "Timestamp Converter",
+        "description": "Convert between timestamps and dates"
+      }
     },
     "stats": {
       "available_tools": "Available Tools",

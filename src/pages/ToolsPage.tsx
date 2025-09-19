@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Zap, Code, Calculator, Clock, FileText, Shield, QrCode, GitCompare, Smile } from 'lucide-react';
+import { Search, Zap, Code, Calculator, Clock, FileText, Shield, QrCode, GitCompare, Smile, Hash } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const ToolsPage: React.FC = () => {
@@ -72,6 +72,15 @@ const ToolsPage: React.FC = () => {
       icon: Smile,
       color: 'bg-indigo-500',
       tags: [t('tools.tags.slack'), t('tools.tags.emoji'), t('tools.tags.image'), t('tools.tags.generator')],
+    },
+    {
+      id: 'ascii-art-generator',
+      name: t('tools.tools_list.ascii_art_generator.name'),
+      description: t('tools.tools_list.ascii_art_generator.description'),
+      category: 'generator',
+      icon: Hash,
+      color: 'bg-teal-500',
+      tags: [t('tools.tags.ascii'), t('tools.tags.art'), t('tools.tags.image'), t('tools.tags.text'), t('tools.tags.generator')],
     },
     {
       id: 'unit-converter',
