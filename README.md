@@ -66,44 +66,6 @@ function App() {
 }
 ```
 
-#### Footer 컴포넌트
-- **파일**: `src/components/layout/Footer.tsx`
-- **스토리북**: `src/components/layout/Footer.stories.tsx`
-- **기능**: 저작권 정보, 빠른 링크, 지원 정보
-- **Props**: 없음
-
-#### Layout 컴포넌트
-- **파일**: `src/components/layout/Layout.tsx`
-- **기능**: 헤더, 푸터, 메인 콘텐츠 영역을 포함한 전체 레이아웃
-- **Props**: 없음 (React Router의 Outlet 사용)
-
-### 페이지 컴포넌트
-
-#### HomePage
-- **파일**: `src/pages/HomePage.tsx`
-- **기능**: 서비스 소개, 인기 도구, 주요 특징
-- **Props**: 없음
-
-#### ToolsPage
-- **파일**: `src/pages/ToolsPage.tsx`
-- **기능**: 모든 도구 목록, 검색, 카테고리 필터링
-- **Props**: 없음
-
-#### ToolDetailPage
-- **파일**: `src/pages/ToolDetailPage.tsx`
-- **기능**: 선택된 도구의 상세 정보와 기능
-- **Props**: URL 파라미터 (toolId)
-
-#### LoginPage
-- **파일**: `src/pages/LoginPage.tsx`
-- **기능**: 이메일/비밀번호 로그인, 구글 OAuth
-- **Props**: 없음
-
-#### DashboardPage
-- **파일**: `src/pages/DashboardPage.tsx`
-- **기능**: 사용 통계, 차트, 최근 활동
-- **Props**: 없음
-
 ## 🚀 개발 시작하기
 
 ### 1. 의존성 설치
