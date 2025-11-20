@@ -9,6 +9,7 @@ import QRCodeGenerator from '../components/tools/QRCodeGenerator';
 import StringDiff from '../components/tools/StringDiff';
 import SlackEmojiGenerator from '../components/tools/SlackEmojiGenerator';
 import AsciiArtGenerator from '../components/tools/AsciiArtGenerator';
+import Stopwatch from '../components/tools/Stopwatch';
 
 const ToolDetailPage: React.FC = () => {
   const { toolId } = useParams();
@@ -21,6 +22,7 @@ const ToolDetailPage: React.FC = () => {
   const isStringDiff = toolId === 'string-diff';
   const isSlackEmojiGenerator = toolId === 'slack-emoji-generator';
   const isAsciiArtGenerator = toolId === 'ascii-art-generator';
+  const isStopwatch = toolId === 'stopwatch';
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -51,6 +53,8 @@ const ToolDetailPage: React.FC = () => {
           <SlackEmojiGenerator />
         ) : isAsciiArtGenerator ? (
           <AsciiArtGenerator />
+        ) : isStopwatch ? (
+          <Stopwatch />
         ) : (
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="text-center">

@@ -238,6 +238,20 @@
         "item5_desc": "디코딩된 결과가 유효한 URL인 경우 미리보기를 제공합니다"
       }
     },
+    "stopwatch": {
+      "title": "스톱워치",
+      "description": "시간을 측정하는 스톱워치입니다.",
+      "start": "시작",
+      "pause": "일시정지",
+      "reset": "초기화",
+      "record": "기록",
+      "records": "기록",
+      "lap": "기록",
+      "start_label": "시작",
+      "no_records": "기록 없음",
+      "continue": "계속",
+      "clear_all": "전체 삭제"
+    },
     "tools_list": {
       "unit_converter": {
         "name": "단위 변환",
@@ -286,6 +300,10 @@
       "ascii_art_generator": {
         "name": "ASCII 아트 생성기",
         "description": "이미지를 ASCII 아트로 변환합니다. 다양한 문자 세트와 설정 옵션을 제공합니다."
+      },
+      "stopwatch": {
+        "name": "스톱워치",
+        "description": "시간을 측정하는 스톱워치입니다."
       }
     },
     "string_diff": {
@@ -353,43 +371,6 @@
         "item4": "복사 버튼으로 Slack 업로드 가이드를 확인하세요"
       }
     },
-    "ascii_art": {
-      "title": "ASCII 아트 생성기",
-      "description": "이미지를 ASCII 아트로 변환합니다. 다양한 문자 세트와 설정을 통해 원하는 스타일의 텍스트 아트를 만드세요",
-      "image_upload": "이미지 업로드",
-      "drag_drop_image": "이미지를 여기에 드래그하세요",
-      "supported_formats": "지원 형식: JPG, PNG, GIF, WebP (최대 10MB)",
-      "choose_image": "이미지 선택",
-      "original_image": "원본 이미지",
-      "settings": "설정",
-      "width": "너비",
-      "characters": "문자",
-      "character_set": "문자 세트",
-      "character_sets": {
-        "ascii": "ASCII 문자 (@%#*+=-:. )",
-        "extended": "확장 문자 (█▉▊▋▌▍▎▏ )",
-        "simple": "단순 문자 (█▓▒░ )",
-        "blocks": "블록 문자 (██▓▒░  )",
-        "custom": "사용자 정의"
-      },
-      "custom_characters": "사용자 정의 문자",
-      "custom_characters_hint": "밝은 곳부터 어두운 곳 순서로 문자를 입력하세요",
-      "contrast": "대비",
-      "result": "ASCII 아트 결과",
-      "no_result": "이미지를 업로드하면 ASCII 아트가 여기에 표시됩니다",
-      "character_preview": "문자 미리보기",
-      "character_preview_desc": "선택된 문자 세트 (밝음 → 어둠 순서)",
-      "invalid_file_type": "이미지 파일만 업로드할 수 있습니다.",
-      "file_too_large": "파일 크기는 10MB 이하여야 합니다.",
-      "processing_error": "이미지 처리 중 오류가 발생했습니다.",
-      "usage": {
-        "item1": "이미지를 업로드하면 자동으로 ASCII 아트로 변환됩니다",
-        "item2": "너비를 조정하여 출력 크기를 설정하세요 (20-200 문자)",
-        "item3": "다양한 문자 세트를 선택하여 원하는 스타일을 만드세요",
-        "item4": "대비를 조정하여 명암 효과를 강화하거나 부드럽게 만드세요",
-        "item5": "결과를 복사하거나 텍스트 파일로 다운로드할 수 있습니다"
-      }
-    },
     "tags": {
       "encoding": "인코딩",
       "url": "URL",
@@ -421,79 +402,15 @@
       "image": "이미지",
       "ascii": "ASCII",
       "art": "아트",
-      "text": "텍스트"
-    },
-    "ascii_art": {
-      "title": "ASCII 아트 생성기",
-      "description": "이미지를 ASCII 문자로 변환하여 텍스트 아트를 만듭니다",
-      "upload_section": "이미지 업로드",
-      "drag_and_drop": "이미지를 드래그하여 업로드하세요",
-      "or_click_to_browse": "또는 클릭하여 파일을 선택하세요",
-      "settings": "설정",
-      "width": "너비",
-      "threshold": "임계값",
-      "character_set": "문자 세트",
-      "custom_character": "사용자 정의 문자",
-      "char_sets": {
-        "ascii": "ASCII",
-        "extended": "확장",
-        "simple": "단순",
-        "blocks": "블록",
-        "custom": "사용자 정의"
-      },
-      "image_preview": "이미지 미리보기",
-      "original_image": "원본 이미지",
-      "grayscale_preview": "그레이스케일 미리보기",
-      "result": "결과",
-      "no_result": "결과가 없습니다",
-      "processing": "처리 중...",
-      "invalid_file_type": "유효하지 않은 파일 형식입니다",
-      "file_too_large": "파일 크기가 너무 큽니다 (최대 10MB)",
-      "processing_error": "처리 중 오류가 발생했습니다"
-    },
-    "tools_list": {
-      "json_formatter": {
-        "name": "JSON 포맷터",
-        "description": "JSON 문자열을 읽기 쉽게 포맷팅하거나 압축"
-      },
-      "base64_converter": {
-        "name": "Base64 변환기",
-        "description": "텍스트와 파일을 Base64로 인코딩/디코딩"
-      },
-      "url_encoder": {
-        "name": "URL 인코더/디코더",
-        "description": "URL 인코딩 및 디코딩"
-      },
-      "qr_code_generator": {
-        "name": "QR 코드 생성기",
-        "description": "텍스트를 QR 코드로 변환"
-      },
-      "string_diff": {
-        "name": "문자열 비교",
-        "description": "두 텍스트의 차이점을 비교하고 하이라이트"
-      },
-      "slack_emoji_generator": {
-        "name": "Slack 이모지 생성기",
-        "description": "텍스트로 Slack 이모지 이미지 생성"
-      },
-      "ascii_art_generator": {
-        "name": "ASCII 아트 생성기",
-        "description": "이미지를 ASCII 문자로 변환"
-      },
-      "unit_converter": {
-        "name": "단위 변환기",
-        "description": "다양한 단위 간 변환"
-      },
-      "timestamp_converter": {
-        "name": "타임스탬프 변환기",
-        "description": "타임스탬프와 날짜 간 변환"
-      }
+      "text": "텍스트",
+      "utility": "유틸리티"
     },
     "stats": {
       "available_tools": "사용 가능한 도구",
       "tool_categories": "도구 카테고리",
       "all_free": "모든 도구 무료 사용"
     }
+
   },
   "footer": {
     "description": "다양한 변환/도구 기능을 제공하는 웹 유틸리티 허브입니다. 개발자와 일반 사용자를 위한 편리한 도구들을 제공합니다.",

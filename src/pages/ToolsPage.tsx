@@ -20,7 +20,7 @@ const ToolsPage: React.FC = () => {
 
   const tools = [
     {
-      id: 'json-pretty-formatter',
+      id: 'json-formatter',
       name: t('tools.tools_list.json_formatter.name'),
       description: t('tools.tools_list.json_formatter.description'),
       category: 'formatter',
@@ -90,6 +90,15 @@ const ToolsPage: React.FC = () => {
       icon: Calculator,
       color: 'bg-blue-500',
       tags: [t('tools.tags.unit'), t('tools.tags.conversion'), t('tools.tags.calculation')],
+    },
+    {
+      id: 'stopwatch',
+      name: t('tools.tools_list.stopwatch.name'),
+      description: t('tools.tools_list.stopwatch.description'),
+      category: 'time',
+      icon: Clock,
+      color: 'bg-pink-500',
+      tags: [t('tools.tags.time'), t('tools.tags.utility')],
     },
   ];
 
