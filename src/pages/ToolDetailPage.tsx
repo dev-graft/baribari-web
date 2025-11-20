@@ -15,7 +15,7 @@ const ToolDetailPage: React.FC = () => {
   const { t } = useTranslation();
 
   const isBase64Converter = toolId === 'base64-converter';
-  const isJsonPrettyFormatter = toolId === 'json-pretty-formatter';
+  const isJsonPrettyFormatter = toolId === 'json-formatter';
   const isUrlEncoder = toolId === 'url-encoder';
   const isQRCodeGenerator = toolId === 'qr-code-generator';
   const isStringDiff = toolId === 'string-diff';
