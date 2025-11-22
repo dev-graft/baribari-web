@@ -29,11 +29,11 @@ const HomePage: React.FC = () => {
       color: 'bg-purple-500',
     },
     {
-      id: 'timestamp-converter',
-      name: t('tools.tools_list.timestamp_converter.name'),
-      description: t('tools.tools_list.timestamp_converter.description'),
+      id: 'stopwatch',
+      name: t('tools.tools_list.stopwatch.name'),
+      description: t('tools.tools_list.stopwatch.description'),
       icon: Clock,
-      color: 'bg-orange-500',
+      color: 'bg-pink-500',
     },
   ];
 
